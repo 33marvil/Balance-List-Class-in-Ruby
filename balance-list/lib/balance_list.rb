@@ -4,7 +4,7 @@ class BalanceList
   attr_reader :name # Solo lectura
 
   def initialize(name, balance) # Method constructor
-    @name = name          # Variable de instancia
+    @name = name                # Variable de instancia
     @balance = balance
     @sigui = 0
   end
@@ -34,18 +34,17 @@ class BalanceList
   end
 
   def next_balance # @balance[1][1]
-    #@sigui += 1 # iniciar de 0 += 1
+    # iniciar de 0 += 1
     # si @sigui llega al final sigui vulava a iniciar
-    if @sigui < @balance.length - 1 # revisar operador logico
-      @sigui += 1
+    if @sigui < @balance.length - 1 # revisar operador lógico <= no aplica < si
+      @sigui += 1                   #@sigui += 1
     else
       @sigui = 0
     end
     @sigui
     @balance[@sigui][1]
   end
-
-end# **
+end# class end
 
 # def sum(a, b)
 #   a + b
